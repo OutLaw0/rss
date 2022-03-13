@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS30 custom video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+</head>
+
+<body id="body">
+
+    <header class="header">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-i18="video">Video</span>
+            </h2>
+        </div>
+    </header>
+    <main>
+        <section class="video" id="video">
+            <div class="container">
+                <div class="video-player">
+                    <div class="poster"></div> <!-- add poster -->
+                    <video class="viewer" src="assets/video/video.mp4"></video> <!-- add video -->
+                    <div class="play-btn"></div>
+                    <div class="controls"> <!-- add controls -->
+                        <div class="play-icon play"></div> 
+                        <input type="range" name="progress" value="0" min="0" max="100" step="1" class="range_slider progress"> <!-- progress range -->
+                        <div class="time">
+                            <time class="time-elapsed">00:00</time>
+                            <span> / </span>
+                            <time class="duration">00:00</time>
+                          </div>
+                        <button data-skip="10" class="skip__button">10s >></button> <!-- skip button -->
+                        <div class="play-icon volume-icon"></div> 
+                        <input type="range" name="volume" value="0.4" min="0" max="1" step="0.01" class="range_slider volume"> <!-- volume range -->
+                    </div>
+                </div>
+            <div class="portfolio-link">
+                <p >You can also look this work on my <a class="link" href="https://rolling-scopes-school.github.io/outlaw0-JSFEPRESCHOOL/portfolio/#video" target="_blank" rel="noopener noreferrer">Portfolio project page</a></p> 
+               
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer__container">
+            <div class="footer-copyright">
+                <p class="copyright">©</p>
+                <p class="year">2022</p>
+                <a class="github" href="https://github.com/OutLaw0" target="_blank" rel="noopener noreferrer">github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="rss"> Rolling Scopes School </a>
+        </div>
+    </footer>
+
+
+    <script type="module" src="index.js"></script>
+    <script  src="selfcheck.js"></script>
+
+</body>
+
+</html>
