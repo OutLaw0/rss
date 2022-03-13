@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie APP</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <button class="main_button popular" onclick="getPopularFilms()">Popular</button>
+            <button class="main_button popular" onclick="getTopRated()">Top Rated</button>
+            <button class="main_button popular" onclick="getNowPlaying()">Now Playing</button>
+            <form id="form">
+                <div class="label_wrap">
+                   
+                    <input type="radio" id="by_title"
+                     name="search_type" value="by_title" checked>
+                     <label for="by_title" title=""> By Title</label>
+                    
+                    <input type="radio" id="by_actor"
+                     name="search_type" value="by_actor">
+                     <label for="by_actor"  title="working with 1st most popular person"> By Actor</label>
+                </div>
+                <input type="search" results=0 class="search" title="" placeholder="Search">
+                <!-- <button class="text-clear" type="reset" title="Clear"></button>-->
+              </form>
+        </header>
+        <main class="main">
+      
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-data">
+                    <p class="copyright">©</p>
+                    <p class="year">2022</p>
+                    <a class="github-username" href="https://github.com/OutLaw0" target="_blank" rel="noopener noreferrer">github</a>
+                </div>
+            <p>TMDB Api used</p>
+                <a href="https://rs.school/js-stage0/" class="rss"> Rolling Scopes School </a>
+            </div>
+            </div>
+
+
+        </footer>
+        <script src="index.js"></script>
+        <script src="selfcheck.js"></script>
+    </div>                
+</body>
+</html>
