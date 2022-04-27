@@ -1,4 +1,4 @@
-https://outlaw0.github.iorsschool-stg/Stage0/portfolio/
+https://outlaw0.github.io/rsschool-stg/Stage0/portfolio/
 
 https://outlaw0.github.io/rsschool-stg/Stage0/js30-1.3-custom-video/
 
