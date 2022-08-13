@@ -1,0 +1,66 @@
+.table {
+  margin: 1rem 0 3rem 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+thead {
+  background: rgb(119 62 144 / 34%);
+}
+
+.table-dark {
+  color: #fff;
+  background-color: rgb(52 58 64 / 62%);
+}
+
+.table thead th {
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  border-bottom: 4px solid #2b3035;
+}
+
+.table-dark.table-hover tbody tr:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .075);
+}
+
+.table tbody tr {
+  margin-bottom: 10px;
+}
+
+.table tbody th,
+.table tbody td {
+  border: none;
+  border-bottom: 3px solid #2b3035;
+  font-size: 1rem;
+}
+
+.table th {
+  padding: 1rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table td {
+  padding: 0.65rem 0.8rem 0.35rem 0.8rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.wins,
+.best {
+  cursor: pointer;
+}
+
+.table .asc::after {
+  content: '▼';
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+}
+
+.table .desc::after {
+  content: '▲';
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+}

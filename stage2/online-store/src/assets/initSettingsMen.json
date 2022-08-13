@@ -1,0 +1,49 @@
+{
+  "filters": {
+    "price": {
+      "min": 18,
+      "max": 99
+    },
+    "stock": {
+      "min": 0,
+      "max": 104
+    },
+    "cat_4": [
+      "Hoodies & Sweatshirts",
+      "Jackets",
+      "Tees",
+      "Tanks"
+    ],
+    "color": [
+      "White",
+      "Gray",
+      "Black",
+      "Blue",
+      "Brown",
+      "Green",
+      "Lavender",
+      "Orange",
+      "Purple",
+      "Red",
+      "Yellow"
+    ],
+    "size": [
+      "L",
+      "M",
+      "S"
+    ],
+    "featured": false,
+    "in_stock": false
+  },
+  "sort": [
+    "az",
+    "za",
+    "low",
+    "high"
+  ],
+  "itemsPerPage": [
+    20,
+    40,
+    60
+  ]
+}
