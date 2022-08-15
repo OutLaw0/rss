@@ -1,9 +1,8 @@
 # outlaw0-JSFE2022Q1
 ## presentation on the topic of react
-- a link to your YouTube video;
-- a link to your Reveal presentation's deploy;
-- (optional) a link to the transcript of your presentation;
-- (optional) your comments;
+- https://youtu.be/al4wEy9qAOA
+- https://outlaw0.github.io/rsschool-stg/stage2/react-for-dummies/
+- https://outlaw0.github.io/rsschool-stg/stage2/react-for-dummies/
 
 
 Hello guys!
@@ -44,7 +43,12 @@ Slide 5 - React Ecosystem
 
 slide 6 - Declarative
 
+If I were to pick one of the many benefits of using React, I would definitely say that React is declarative (versus imperative). Let me explain the difference between the two in a very simple way. Let's say that you order your assistant (we all have a personal assistant to run your errands, don't we?) to go to Starbucks the next building to get you a cup of coffee. An imperative way of your order would look something like this:
 
+1 Go out the door of this building
+2 Turn left
+3 Walk 10 meters
+...
 
 slide 7 - State 
 
