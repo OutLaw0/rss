@@ -3,7 +3,7 @@ import { LocalStorage } from '../types/common';
 import { filterItemsPage } from './sorting';
 import { CatalogSettings, InitCatalogSettings } from '../types/catalogTypes';
 import '../assets/dataStatic.json';
-import '../assets/Settings.json';
+import '../assets/settings.json';
 import '../assets/initSettings.json';
 
 const addLocalKey = (key: string) => `dms-${key}`;

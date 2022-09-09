@@ -51,7 +51,6 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "nouislider": "^15.6.0",
-    "shufflejs": "^6.0.0"
+    "nouislider": "^15.6.0"
   }
 }

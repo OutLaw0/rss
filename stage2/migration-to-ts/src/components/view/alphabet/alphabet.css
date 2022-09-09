@@ -1,0 +1,33 @@
+.letterContainer {
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2em;
+  /* background-color: #abcdef; */
+  color: #ddd;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding-bottom: 10px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.letterElem{
+  padding: 0 0.25rem;
+  cursor: pointer;
+}
+
+.active {
+  color: #69db7e;
+  cursor: default;
+}
+
+@media (max-width: 640px) {
+  .letterContainer {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+}

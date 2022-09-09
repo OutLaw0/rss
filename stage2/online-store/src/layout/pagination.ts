@@ -72,7 +72,7 @@ class RenderPagination {
 
     (<HTMLElement>(<HTMLElement>containerNav).firstElementChild).after(
       fragment,
-    ); // ???
+    );
 
     (<HTMLElement>(
       (<HTMLElement>containerNav).firstElementChild

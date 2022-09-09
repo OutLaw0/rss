@@ -48,7 +48,7 @@ class Catalog {
       initSettings: {} as InitCatalogSettings,
       originalItems: [],
       sortedItems: [],
-      inCartItems: {} as CartItems,
+      inCartItems: {},
       inCart: 0,
       currentPage: 0,
       search: '',
@@ -215,11 +215,11 @@ class Catalog {
     const { inCartItems } = this.setup;
     let { inCart } = this.setup;
 
-    const cartText = <HTMLElement>document.querySelector('.cart_count');
+    const cartDisplay = <HTMLElement>document.querySelector('.cart_count');
     if (Object.prototype.hasOwnProperty.call(inCartItems, id)) {
       delete inCartItems[id];
       inCart -= 1;
-      cartText.textContent = `${inCart}`;
+      cartDisplay.textContent = `${inCart}`;
       this.setup.inCart = inCart;
     } else if (inCart > 19) {
       const modalList = document.querySelectorAll('[aria-labelledby="modal-message"]');
@@ -230,7 +230,7 @@ class Catalog {
     } else {
       inCartItems[id] = 'id';
       inCart += 1;
-      cartText.textContent = `${inCart}`;
+      cartDisplay.textContent = `${inCart}`;
       this.setup.inCart = inCart;
     }
   }

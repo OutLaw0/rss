@@ -1,0 +1,188 @@
+:root {
+  --white: #ddd;
+  --bg-color: #555;
+  --sec-color: #9d9d9d;
+}
+
+a:focus,
+a:active {
+  outline: none;
+  color: var(--white);;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--bg-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+body {
+  color: var(--white);
+  background: #17181c;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-height: 100vh;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+main {
+  margin-bottom: auto;
+}
+
+header {
+  padding: 10px 30px;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  max-width: fit-content;
+
+}
+
+header h1::after {
+  position: absolute;
+  content: '';
+  bottom: -7px;
+  width: 100%;
+  height: 3px;
+  animation: color-change 10s infinite;
+  margin: 0 auto;
+  left: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: var(--white);
+  }
+
+  20% {
+    background-color: var(--white);
+  }
+
+  50% {
+    background-color: #3fcc59;
+  }
+
+  80% {
+    background-color: #30c5ff;
+  }
+
+  100% {
+    background-color: var(--white);
+  }
+
+}
+
+footer .copyright {
+  color: var(--white);
+  text-align: center;
+}
+
+footer .copyright:before {
+  content: '©';
+}
+
+.footer-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white);
+}
+.footer-data {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.copyright {
+  padding-right: 20px;
+
+}
+
+.github-username,
+.rss {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0px
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 3px #000 inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--sec-color);
+}
+
+::-webkit-resizer {
+  height: 0px
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+@media (max-width: 938px) {
+
+  header {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-container>div,
+  a,
+  p {
+    line-height: 2.5rem;
+  }
+
+  header h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header h1::after {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  header h1 {
+
+    font-size: 30px;
+  }
+
+}
