@@ -1,0 +1,13 @@
+{
+  "filters": {
+    "price": {},
+    "stock": {},
+    "cat_4": [],
+    "color": [],
+    "size": [],
+    "featured": false,
+    "in_stock": false
+  },
+  "sort": "az",
+  "itemsPerPage": 20
+}
