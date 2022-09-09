@@ -1,0 +1,87 @@
+@mixin font ($family, $size, $height, $weight: 400, $style: normal){
+font-family: $family;
+font-size: $size;
+line-height: $height;
+font-weight: $weight;
+font-style: $style;
+}
+
+@function toRem($value) {
+    $remValue: calc($value / 16) + rem; 
+    @return $remValue;
+}
+
+// media aliases and breakpoints
+$screen-xs-min: 320px;
+$screen-sm-min: 490px;
+$screen-md-min: 768px;
+$screen-lg-min: 1280px;
+
+$screen-xs-max: 320px;
+//$screen-sm-max: 550px;
+$screen-smm-max: 550px;
+$screen-sm-max: 767px;
+$screen-md-max: 768px;
+$screen-lg-max: 1280px;
+
+//$screen-mid-max: 950px;
+$screen-mid-max: 1279px;
+
+// media devices
+@mixin xs {
+  @media screen and (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+@mixin smm {
+  @media screen and (max-width: #{$screen-smm-max}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+@mixin mid {
+    @media screen and (max-width: #{$screen-mid-max}) {
+      @content;
+    }
+  }
+@mixin lg {
+  @media screen and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// media gt queries
+@mixin gt-xs {
+  @media screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin gt-sm {
+  @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin gt-md {
+  @media screen and (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin gt-lg {
+  @media screen and (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

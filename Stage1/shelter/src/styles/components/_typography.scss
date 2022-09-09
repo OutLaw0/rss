@@ -1,0 +1,162 @@
+h1 {
+    @include font("Georgia", toRem(32), toRem(35.2));
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+ 
+}
+
+h2 {
+    @include font("Georgia", toRem(44), toRem(57.2));
+    color: var(--color-light-xl);
+    letter-spacing: initial;
+    @include sm {
+        font-size: toRem(25);
+        line-height: toRem(32.5);
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+}
+
+h3 {
+    @include font("Georgia", toRem(35), toRem(45.5));
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+    @include sm {
+        font-size: toRem(25);
+        line-height: toRem(32.5);
+        text-align: center;
+    }
+    &.popup__item-title{
+        @include sm {
+            font-size: toRem(35);
+            line-height: toRem(45.5);
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+    }
+}
+
+h4 {
+    @include font("Georgia", toRem(20), toRem(23));
+    letter-spacing: 0.06em;
+    @include sm {
+        & .help__icon--text{
+            font-size: toRem(15);
+            line-height: toRem(16.5);
+            letter-spacing: 0.06rem;
+       }
+       &.donation__number--number{
+        font-size: toRem(15);
+        line-height: toRem(16.5);
+        letter-spacing: 0.06rem;
+   }
+    }
+}
+
+h5 {
+    @include font("Georgia", toRem(15), toRem(16.5));
+    letter-spacing: 0.06em;
+    @include md {
+        &.popup--text{
+            font-size: toRem(13);
+            line-height: toRem(14.3);
+            letter-spacing: 0.05rem;
+       }
+    }
+  
+}
+
+/*
+a:hover {
+    color: var(--color-primary);
+    transition: color 0.3s;
+}*/
+
+button {
+    @include font("Georgia", toRem(17), toRem(22));
+    letter-spacing: 0.06em;
+    padding: 13px 43px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.button--main {
+    border: 2px solid var(--color-primary);
+    color: var(--color-dark-3xl);
+    background-color: var(--color-primary);
+    transition: background-color 0.3s;
+
+}
+
+.button--second {
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    transition: background-color 0.3s;
+
+}
+.button--donation{
+    padding: 5.5px 15px 7.5px 15px;
+    margin-bottom: 20px;
+    background-color: var(--color-primary);
+    border-radius: 9px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    @include sm {
+        margin: 0 auto 20px auto;
+        letter-spacing: 0.04em;
+        padding: 7.5px 15px 7.5px 15px;
+        }
+}
+
+.button--main:hover {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    transition: background-color 0.3s;
+}
+.button--donation:hover {
+    background-color: var(--color-primary-light);
+    transition: background-color 0.3s;
+
+}
+
+.slider__arrow:hover {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    transition: background-color 0.3s;
+}
+
+.slider__item:hover{
+    background: var(--color-light-xl);
+    & .button--second{
+        border: 2px solid var(--color-primary-light);
+        background-color: var(--color-primary-light);
+        transition: background-color 0.3s;
+    }
+}
+
+
+.popup:hover .popup-close.slider__arrow {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    transition: background-color 0.3s;
+}
+
+
+.popup__wrapper:hover .popup-close.slider__arrow {
+    border: 2px solid var(--color-primary);
+    background-color: unset;
+   // transition: background-color 0.3s;
+}
+
+.popup .popup__wrapper .popup-close.slider__arrow:hover {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    transition: background-color 0.3s;
+}
+
+
+
+
+

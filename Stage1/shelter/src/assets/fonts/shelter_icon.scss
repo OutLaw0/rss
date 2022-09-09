@@ -1,0 +1,127 @@
+$icomoon-font-family: "shelter_icon" !default;
+$icomoon-font-path: "../assets/fonts" !default;
+
+$icon-collars-or-leashes: "\e900";
+$icon-Arrow-left: "\e901";
+$icon-Arrow-right: "\e902";
+$icon-bowls-and-cups: "\e903";
+$icon-close: "\e904";
+$icon-credit-card: "\e905";
+$icon-mail: "\e906";
+$icon-medicines: "\e907";
+$icon-phone: "\e908";
+$icon-pin: "\e909";
+$icon-shampoos: "\e90a";
+$icon-sleeping-area: "\e90b";
+$icon-toys: "\e90c";
+$icon-transportation: "\e90d";
+$icon-Vector: "\e90e";
+$icon-vitamins: "\e90f";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+ // src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?hitlof');
+  src:  //url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?hitlof#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?hitlof') format('truetype'),
+    //url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?hitlof') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?hitlof##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  //speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-collars-or-leashes {
+  &:before {
+    content: $icon-collars-or-leashes; 
+  }
+}
+.icon-Arrow-left {
+  &:before {
+    content: $icon-Arrow-left; 
+  }
+}
+.icon-Arrow-right {
+  &:before {
+    content: $icon-Arrow-right; 
+  }
+}
+.icon-bowls-and-cups {
+  &:before {
+    content: $icon-bowls-and-cups; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-credit-card {
+  &:before {
+    content: $icon-credit-card; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-medicines {
+  &:before {
+    content: $icon-medicines; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-pin {
+  &:before {
+    content: $icon-pin; 
+  }
+}
+.icon-shampoos {
+  &:before {
+    content: $icon-shampoos; 
+  }
+}
+.icon-sleeping-area {
+  &:before {
+    content: $icon-sleeping-area; 
+  }
+}
+.icon-toys {
+  &:before {
+    content: $icon-toys; 
+  }
+}
+.icon-transportation {
+  &:before {
+    content: $icon-transportation; 
+  }
+}
+.icon-Vector {
+  &:before {
+    content: $icon-Vector; 
+  }
+}
+.icon-vitamins {
+  &:before {
+    content: $icon-vitamins; 
+  }
+}
