@@ -1,0 +1,342 @@
+@import url('./myres.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root {
+  --white: #f7f7f7;
+  --bg: #c1c1c1;
+  --basic: #3f3f3f;
+  --game-hd: #94867c;
+  --game-4: #df7096;
+  --header: #778ad4;
+
+}
+
+body {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: normal;
+  color: var(--basic);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper input {
+  display: none;
+}
+
+header {
+  background-color: var(--header);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--header)
+}
+
+img {
+  max-height: 40vh;
+  box-shadow: 0rem 0rem 0.4rem 0.2rem rgb(0 0 0 / 30%);
+  border-radius: 0.3rem;
+}
+
+.header__title {
+  font-size: 3rem;
+  display: flex;
+  color: var(--white);
+
+}
+.title-theme-css{
+  color: #cddc39;
+}
+
+.slider {
+  max-width: 50rem;
+  /* background: url(../assets/images/pngegg.png) no-repeat; */
+  /* max-height: 32rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 5%;
+  padding: 2.5rem 5% 1rem 5%;
+  align-items: center;
+
+  background-color: #3f3f3f;
+  border-radius: 1.3rem;
+  border: 0.3rem solid var(--header);
+  box-shadow: 0rem 0.1rem 0.8rem 0.1rem rgb(0 0 0 / 38%);
+}
+
+.slider__wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  /* max-width: 52rem; */
+  /* max-height: 37rem; */
+  display: flex;
+  /* background-color: var(--basic); */
+  /* z-index: -1; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+}
+
+
+.slider__items {
+  display: flex;
+  transition: ease-in-out 500ms;
+  max-width: 40rem;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 2rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.slider__controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* padding: 1rem 0rem 0rem 0rem;*/
+}
+
+label {
+  padding: 1rem 0rem;
+  cursor: pointer;
+}
+
+label>span {
+
+  display: block;
+  height: 0.35rem;
+  width: 2rem;
+  background-color: var(--header);
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+
+#slide1:checked~.slider__bottom .slider__controls label:nth-of-type(1) span,
+#slide2:checked~.slider__bottom .slider__controls label:nth-of-type(2) span,
+#slide3:checked~.slider__bottom .slider__controls label:nth-of-type(3) span,
+#slide4:checked~.slider__bottom .slider__controls label:nth-of-type(4) span,
+#slide5:checked~.slider__bottom .slider__controls label:nth-of-type(5) span {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+#slide1:checked~.slider__bottom .slider__controls label:nth-of-type(1):hover span,
+#slide2:checked~.slider__bottom .slider__controls label:nth-of-type(2):hover span,
+#slide3:checked~.slider__bottom .slider__controls label:nth-of-type(3):hover span,
+#slide4:checked~.slider__bottom .slider__controls label:nth-of-type(4):hover span,
+#slide5:checked~.slider__bottom .slider__controls label:nth-of-type(5):hover span {
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+label:hover>span {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+label:active {
+  padding: 0.95rem 0rem;
+}
+
+label:active>span {
+
+  background-color: var(--game-4);
+  opacity: 1;
+  /* transition: 0.3s;*/
+  height: 0.45rem;
+}
+
+#slide1:checked~.slider__items,
+#slide1:checked~.slider__bottom .slider__texts-wrapper .slider__texts {
+  transform: translateX(0%);
+}
+
+#slide2:checked~.slider__items,
+#slide2:checked~.slider__bottom .slider__texts-wrapper .slider__texts {
+  transform: translateX(-100%);
+}
+
+#slide3:checked~.slider__items,
+#slide3:checked~.slider__bottom .slider__texts-wrapper .slider__texts {
+  transform: translateX(-200%);
+}
+
+#slide4:checked~.slider__items,
+#slide4:checked~.slider__bottom .slider__texts-wrapper .slider__texts {
+  transform: translateX(-300%);
+}
+
+#slide5:checked~.slider__items,
+#slide5:checked~.slider__bottom .slider__texts-wrapper .slider__texts {
+  transform: translateX(-400%);
+}
+
+.slider__bottom {
+  display: flex;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  width: 100%;
+  line-height: 2rem;
+  justify-content: space-between;
+}
+
+.slider__texts-wrapper {
+  overflow: hidden;
+}
+
+.slider__texts {
+  display: flex;
+  width: 10rem;
+  color: var(--white);
+  font-size: 1.3rem;
+  transition: ease-in-out 300ms;
+}
+
+.slider__text {
+  display: flex;
+  flex: 0 0 100%;
+  white-space: nowrap;
+}
+
+.title-theme {
+  color: var(--basic);
+}
+
+
+.footer-container {
+  color: var(--basic);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.footer-data {
+  display: flex;
+  align-items: center;
+  line-height: 2.5rem;
+}
+
+.copyright {
+  padding-right: 1.2rem;
+
+}
+
+.github-username,
+.rss {
+
+  text-decoration: none;
+  padding: 0 1.2rem;
+  transition: color 0.3s;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider {
+    padding: 2rem 5% 1rem 5%;
+  }
+
+  .slider__bottom {
+    padding: 1rem 1rem 0rem 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__controls {
+    order: 1
+  }
+
+  .slider__texts-wrapper {
+    order: 2
+  }
+
+  .slider__text {
+
+    justify-content: center;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-container>div,
+  a,
+  p {
+    line-height: 2.5rem;
+  }
+
+
+
+}
+
+@media (max-width: 450px) {
+
+  /*  body {
+        font-size: 1rem;
+    }*/
+  .slider {
+    padding: 3% 3%;
+  }
+
+  label span {
+    height: 0.3rem;
+    width: 1.5rem;
+  }
+
+  label:active>span {
+    height: 0.40rem;
+  }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+  /* body {
+        font-size: 0.8rem;
+    }*/
+  .slider__texts {
+    font-size: 1rem;
+  }
+}
